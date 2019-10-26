@@ -15,17 +15,17 @@ PrefabInstance:
     - target: {fileID: 6524866979925726033, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
       propertyPath: m_Radius
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
-        type: 3}
-      propertyPath: relations.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
+      propertyPath: relations.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
       propertyPath: multiplicationRate
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
@@ -35,7 +35,7 @@ PrefabInstance:
     - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
       propertyPath: relations.Array.data[0].repulsionStrength
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
@@ -46,6 +46,46 @@ PrefabInstance:
         type: 3}
       propertyPath: relations.Array.data[0].cohesionStrength
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: relations.Array.data[1].repulsionDistance
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: relations.Array.data[1].repulsionStrength
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: relations.Array.data[1].cohesionDistance
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: relations.Array.data[1].cohesionStrength
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: size
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: regionStrength
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: deathDistance
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3549790658111145005, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
