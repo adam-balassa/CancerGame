@@ -289,8 +289,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ba6e84c36d3b4905992e64b7a40d79a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 0
+  chargeTime: 1
   fireButton: Fire
+  fireAnimation: {fileID: 8466252442482407506, guid: f5527b63c98e34809a5aa22829011fe4,
+    type: 3}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -301,7 +303,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
+  m_BackGroundColor: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -390,12 +392,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 6.637146, y: 15.422489}
-      - {x: 5.531788, y: 17.741478}
-      - {x: 0.48775792, y: 17.785723}
-      - {x: -0.7581465, y: 15.604649}
-      - {x: 1.2761929, y: 11.182871}
-      - {x: 5.5030804, y: 10.412918}
+    - - {x: 6.021248, y: 14.738159}
+      - {x: 5.121188, y: 17.399311}
+      - {x: 2.1985872, y: 17.375122}
+      - {x: 0.7473824, y: 14.57815}
+      - {x: 2.2342575, y: 11.251303}
+      - {x: 4.681882, y: 11.165682}
     - - {x: 9.041909, y: 1.5395446}
       - {x: 12.97083, y: 1.4965215}
       - {x: 14.854862, y: 3.8853002}
