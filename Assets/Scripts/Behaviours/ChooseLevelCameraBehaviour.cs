@@ -42,7 +42,7 @@ public class ChooseLevelCameraBehaviour : MonoBehaviour
     void zoomOnOrgan(ChooseLevelManager.Level level) {
         isZooming = true;
         switch(level) {
-            case ChooseLevelManager.Level.BARIN:
+            case ChooseLevelManager.Level.BRAIN:
                 zoomTarget = new Vector3(386, 316, -1);
                 break;
             case ChooseLevelManager.Level.BONE:

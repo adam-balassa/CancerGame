@@ -1,5 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
+ using System.Collections;
+ using System.Collections.Generic;
+ using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,8 +11,10 @@ public class FadeOut : MonoBehaviour
     float currentFade = 0.0f;
     bool fadingOut = false;
     Image image;
+    ChooseLevelManager.Level level;
     void Awake() {
-        ChooseLevelManager.Instance.OnChooseLevel.AddListener((ChooseLevelManager.Level _) => {
+        ChooseLevelManager.Instance.OnChooseLevel.AddListener((ChooseLevelManager.Level l) => {
+            level = l;
             fadingOut = true;
         });
         image = GetComponent<Image>();
@@ -31,5 +35,8 @@ public class FadeOut : MonoBehaviour
     void FixedUpdate() {
         if (!fadingOut) return;
         currentFade += Time.fixedDeltaTime * fadingFactor;
+        if (currentFade >= 1) {
+            SceneManager.LoadScene(ChooseLevelManager.getLevelScene(level));
+        } 
     }
 }

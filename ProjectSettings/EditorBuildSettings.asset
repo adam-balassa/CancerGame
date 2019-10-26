@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StreamLevel.unity
     guid: 1c8417b2c2bb545bbac2958d58ec7f74
+  - enabled: 1
+    path: Assets/Scenes/LevelChooser.unity
+    guid: 03270dc010caa8a44bad0cfd7c75bd41
+  - enabled: 1
+    path: Assets/Scenes/RectalCancerScene.unity
+    guid: 976fbedb58aad403e99a0e9e60fcf523
   m_configObjects: {}
