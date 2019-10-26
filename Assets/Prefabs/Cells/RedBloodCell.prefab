@@ -10,7 +10,17 @@ PrefabInstance:
     - target: {fileID: 3549790658111145002, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
       propertyPath: m_Name
-      value: "v\xF6r\xF6sv\xE9rtest"
+      value: RedBloodCell
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: size
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3549790658111145005, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}

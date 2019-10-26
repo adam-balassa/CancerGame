@@ -10,7 +10,72 @@ PrefabInstance:
     - target: {fileID: 3549790658111145002, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
       propertyPath: m_Name
-      value: "R\xE1kossejt"
+      value: CancerousCell
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: relations.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: multiplicationRate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: deathDistance
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: relations.Array.data[0].repulsionDistance
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: size
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: relations.Array.data[0].repulsionStrength
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: relations.Array.data[0].cohesionStrength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: relations.Array.data[0].cohesionDistance
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: relations.Array.data[1].repulsionDistance
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: relations.Array.data[1].repulsionStrength
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: relations.Array.data[1].cohesionDistance
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: relations.Array.data[1].cohesionStrength
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3549790658111145005, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
@@ -70,22 +135,22 @@ PrefabInstance:
     - target: {fileID: 3705938644403444238, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2347343310774864807, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 2347343310774864807, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2347343310774864807, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2347343310774864807, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
@@ -132,6 +197,21 @@ PrefabInstance:
     - target: {fileID: 3260253562848400444, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
       propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 339260567335230745, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: radius
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 339260567335230745, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: scale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 339260567335230745, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: NucleusRadius
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
