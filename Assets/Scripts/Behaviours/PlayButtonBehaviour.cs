@@ -1,19 +1,19 @@
 ﻿using UnityEngine; 
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class PlayButtonBehaviour : MonoBehaviour
+public class PlayButtonBehaviour : MonoBehaviour, IPointerClickHandler
 {
-    Button button;
     void Awake() {
-        button = GetComponent<Button>();
     }
     // Start is called before the first frame update
     void Start()
     {
-        button.onClick.AddListener(() => {
-            ChooseLevelManager manager = ChooseLevelManager.Instance;
-            manager.LevelChosen = true;
-        });
+    }
+
+    public void OnPointerClick(PointerEventData _) {
+        ChooseLevelManager manager = ChooseLevelManager.Instance;
+        manager.LevelChosen = true;
     }
 
     // Update is called once per frame
