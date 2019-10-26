@@ -19,8 +19,5 @@ public class BrownMotion : MonoBehaviour {
     float movementAngle = Random.Range(0f, (2*Mathf.PI));
     Vector3 vectorToBeAdded = new Vector3(radius*Mathf.Sin(Time.time/2)/4, radius*Mathf.Cos(2*time/2)/4, 0f);
     this.transform.localPosition = (vectorToBeAdded);
-    /*if (Mathf.Sqrt(this.transform.localPosition.x*this.transform.localPosition.x + this.transform.localPosition.y*this.transform.localPosition.y)>=(radius-NucleusRadius)) {
-      this.transform.Translate(-vectorToBeAdded);
-    }*/
   }
 }
