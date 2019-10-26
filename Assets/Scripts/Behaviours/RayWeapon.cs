@@ -8,12 +8,10 @@ public class RayWeapon : MonoBehaviour {
 
     CellManager cellManager;
     new Camera camera;
-    int mask;
 
 	void Awake() {
         cellManager = CellManager.Instance;
         camera = GetComponent<Camera>();
-        mask = LayerMask.GetMask("Cell");
 	}
 
     void Update() {

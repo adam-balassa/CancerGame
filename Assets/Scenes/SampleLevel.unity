@@ -151,16 +151,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   width: 20
-  height: 20
+  height: 32
   seed: 0
-  maxTries: 1000
-  healthyCount: 200
-  cancerCount: 200
-  healthyPrefab: {fileID: 1062534445515412770, guid: a5132beacfe8f48bea172d0358b97bce,
-    type: 3}
-  cancerPrefab: {fileID: 7463863930392333743, guid: 7ec0703656a9c4940b419f4e5c584c33,
-    type: 3}
-  cancerRegion: {fileID: 844983190}
+  maxTries: 10000
+  cellPrefabs:
+  - {fileID: 7463863930392333743, guid: 7ec0703656a9c4940b419f4e5c584c33, type: 3}
+  - {fileID: 1062534445515412770, guid: a5132beacfe8f48bea172d0358b97bce, type: 3}
+  regions:
+  - {fileID: 331611531}
+  - {fileID: 844983190}
 --- !u!114 &10886926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,6 +185,66 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &331611530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 331611532}
+  - component: {fileID: 331611531}
+  m_Layer: 9
+  m_Name: Healthy Region
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!60 &331611531
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331611530}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0}
+      - {x: 20, y: 0}
+      - {x: 20, y: 32}
+      - {x: 0, y: 32}
+--- !u!4 &331611532
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331611530}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -255,7 +314,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 16
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -279,11 +338,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 10, z: -10}
+  m_LocalPosition: {x: 10, y: 16, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &844983189
 GameObject:
@@ -327,16 +386,16 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 11.79812, y: 8.72871}
-      - {x: 7.184655, y: 6.645087}
-      - {x: 2.4291914, y: 8.767042}
-      - {x: 3.7959478, y: 4.0937915}
-      - {x: 0.64884114, y: 0.68615437}
-      - {x: 4.9931526, y: 0.3456607}
-      - {x: 7.1525803, y: -3.4391136}
-      - {x: 9.055418, y: 0.34565926}
-      - {x: 14.103279, y: 0.11670256}
-      - {x: 10.829958, y: 3.9013448}
+    - - {x: 10.633934, y: 13.395605}
+      - {x: 7.6214314, y: 11.310909}
+      - {x: 4.468787, y: 13.21492}
+      - {x: 6.1264677, y: 9.778631}
+      - {x: 2.978873, y: 7.389913}
+      - {x: 6.595481, y: 7.2683463}
+      - {x: 7.589553, y: 3.991856}
+      - {x: 8.7642, y: 7.1953673}
+      - {x: 12.646997, y: 7.3308015}
+      - {x: 9.227921, y: 9.659451}
 --- !u!4 &844983191
 Transform:
   m_ObjectHideFlags: 0
@@ -349,5 +408,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
