@@ -121,7 +121,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &3705442833662292991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,10 +134,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 850f7f0f6969a4456955dcc15c10cdb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  size: 1
   type: 0
   relations: []
+  regionStrength: 5
   multiplicationRate: 0
-  multiplicationDistance: 0.2
   deathDistance: 4
 --- !u!1 &3697093792283496821
 GameObject:
@@ -164,7 +165,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3697093792283496821}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3549790658111145005}
@@ -229,6 +230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2347343310774864807}
   - component: {fileID: 922699220565326943}
+  - component: {fileID: 339260567335230745}
   m_Layer: 8
   m_Name: Core
   m_TagString: Untagged
@@ -244,7 +246,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4105891634809372253}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3549790658111145005}
@@ -293,9 +295,22 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.24, y: 1.82}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &339260567335230745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4105891634809372253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c1db236bda1604894a59af8325f25a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 0
