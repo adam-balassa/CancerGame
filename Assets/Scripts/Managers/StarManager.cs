@@ -10,5 +10,6 @@ public class StarManager : Manager<StarManager> {
                 Result = (short)(5 - i);
                 break;
             }
+            Result = 1;
     }
 }
