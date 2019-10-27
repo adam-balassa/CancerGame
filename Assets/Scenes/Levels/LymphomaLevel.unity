@@ -162,10 +162,10 @@ MonoBehaviour:
   - {fileID: 844983190}
   - {fileID: 331611531}
   cancerousCellType: 0
-  pointsFor5: 8
-  pointsFor4: 12
-  pointsFor3: 20
-  pointsFor2: 25
+  pointsFor5: 12
+  pointsFor4: 17
+  pointsFor3: 24
+  pointsFor2: 32
   starsPrefab: {fileID: 3514621395664033784, guid: 23e24a7d094748344af4004dd07f24da,
     type: 3}
 --- !u!114 &10886926
@@ -523,7 +523,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5780c13448c0d4352b99e6a66b7cf736, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3a1513da63590430bb34a336373995a0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

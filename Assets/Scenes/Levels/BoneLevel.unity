@@ -162,10 +162,10 @@ MonoBehaviour:
   - {fileID: 844983190}
   - {fileID: 331611531}
   cancerousCellType: 0
-  pointsFor5: 8
-  pointsFor4: 12
-  pointsFor3: 20
-  pointsFor2: 25
+  pointsFor5: 10
+  pointsFor4: 15
+  pointsFor3: 23
+  pointsFor2: 30
   starsPrefab: {fileID: 3514621395664033784, guid: 23e24a7d094748344af4004dd07f24da,
     type: 3}
 --- !u!114 &10886926
