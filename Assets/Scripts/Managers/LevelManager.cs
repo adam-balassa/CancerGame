@@ -4,11 +4,6 @@ using System;
 
 public class LevelManager : Manager<LevelManager> {
 
-    public short pointsFor5 = 8;
-    public short pointsFor4 = 12;
-    public short pointsFor3 = 20;
-    public short pointsFor2 = 25;
-
     public float width;
     public float height;
     public int seed;
@@ -18,27 +13,40 @@ public class LevelManager : Manager<LevelManager> {
     public Collider2D[] regions;
 
     public int cancerousCellType = 0;
+
+    public short pointsFor5 = 8;
+    public short pointsFor4 = 12;
+    public short pointsFor3 = 20;
+    public short pointsFor2 = 25;
+    public GameObject starsPrefab;
+
     int cellMask;
     int numberOfCancerousCells = 0;
     short firedRays = 0;
-    public OnGameWon OnGameWonEvent;
     bool gameWon = false;
+
 	void Awake() {
         cellMask = LayerMask.GetMask("Cell");
         UnityEngine.Random.InitState(seed);
         CellManager manager = CellManager.Instance;
+
         manager.OnCellAddedEvent.AddListener((CellBehaviour cell) => {
             if (cell.type == cancerousCellType) numberOfCancerousCells++;
         });
 
-        
         manager.OnCellRemovedEvent.AddListener((CellBehaviour cell) => {
             if (cell.type == cancerousCellType) numberOfCancerousCells--;
+
             if (numberOfCancerousCells == 0 && !gameWon) {
                 gameWon = true;
-                OnGameWonEvent.Invoke(firedRays);
+                Debug.Log(firedRays);
+                StarManager.Instance.CalculateResult(new short[]{
+                    pointsFor5, pointsFor4, pointsFor3, pointsFor2
+                }, firedRays);
+                Instantiate(starsPrefab);
             }
         });
+
         PopulateLevel();
     }
 
@@ -76,7 +84,4 @@ public class LevelManager : Manager<LevelManager> {
     public void RayFired() {
         firedRays++;
     }
-
-    [Serializable]
-    public class OnGameWon : UnityEvent<short> {}
 }
