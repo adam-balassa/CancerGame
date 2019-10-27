@@ -11,7 +11,6 @@ public class ShowStarsBehaviour : MonoBehaviour
     void Start()
     {
         short result = StarManager.Instance.Result;
-        result = 4;
         switch (result) {
             case 1 :
                 drawStar(fullStar, 0);
@@ -45,6 +44,10 @@ public class ShowStarsBehaviour : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void showStarsTimed() {
+
     }
 
     void drawStar(GameObject s, short position) {

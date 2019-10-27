@@ -28,11 +28,11 @@ A demo application for JunctionX Budapest 2019 - VARIAN
 - **Saturday 18:00**  Preparing presentation
 ## Tasks
 ## Todo
-- Connection between main screen and level
-- Redesign amd implement levels
+- ~~Connection between main screen and level~~
+- **Redesign amd implement levels**
 - Scoring system
 - Implement level structure
-- Implement NEXT button action
+- ~~Implement NEXT button action~~
 - Write speech
 - Installation
 - Submission
