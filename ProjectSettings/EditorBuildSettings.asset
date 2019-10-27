@@ -5,13 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/LevelChooser.unity
     guid: 03270dc010caa8a44bad0cfd7c75bd41
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Levels/BoneLevel.unity
     guid: 976fbedb58aad403e99a0e9e60fcf523
   - enabled: 1
     path: Assets/Scenes/Levels/RectumLevel.unity
     guid: 1c8417b2c2bb545bbac2958d58ec7f74
+  - enabled: 1
+    path: Assets/Scenes/Levels/LeukemiaLevel.unity
+    guid: 3586ec8236c9f41c6ba16c03afbe890f
+  - enabled: 1
+    path: Assets/Scenes/Levels/BrainLevel.unity
+    guid: 37c9ca757a5744d9e8cb1891a22b8b59
+  - enabled: 1
+    path: Assets/Scenes/Levels/LymphomaLevel.unity
+    guid: c61d04bf39ea84898b268e72a45c6227
   m_configObjects: {}
