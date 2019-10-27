@@ -12,66 +12,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: WhiteBloodCell
       objectReference: {fileID: 0}
-    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
-        type: 3}
-      propertyPath: relations.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
-        type: 3}
-      propertyPath: type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
-        type: 3}
-      propertyPath: deathDistance
-      value: 1.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
-        type: 3}
-      propertyPath: multiplicationRate
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
-        type: 3}
-      propertyPath: relations.Array.data[1].repulsionDistance
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
-        type: 3}
-      propertyPath: relations.Array.data[1].repulsionStrength
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
-        type: 3}
-      propertyPath: relations.Array.data[1].cohesionDistance
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
-        type: 3}
-      propertyPath: relations.Array.data[1].cohesionStrength
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
-        type: 3}
-      propertyPath: relations.Array.data[0].cohesionStrength
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
-        type: 3}
-      propertyPath: relations.Array.data[0].repulsionStrength
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
-        type: 3}
-      propertyPath: relations.Array.data[0].repulsionDistance
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
-        type: 3}
-      propertyPath: relations.Array.data[0].cohesionDistance
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3549790658111145005, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -148,6 +88,66 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: relations.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: deathDistance
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: multiplicationRate
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: relations.Array.data[1].repulsionDistance
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: relations.Array.data[1].repulsionStrength
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: relations.Array.data[1].cohesionDistance
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: relations.Array.data[1].cohesionStrength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: relations.Array.data[0].cohesionStrength
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: relations.Array.data[0].repulsionStrength
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: relations.Array.data[0].repulsionDistance
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: relations.Array.data[0].cohesionDistance
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3705938644403444238, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -177,6 +177,27 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260253562848400444, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fd703a032a2d04241ba1598f1e1fe949,
+        type: 3}
+    - target: {fileID: 3260253562848400444, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260253562848400444, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260253562848400444, guid: b19796e20fbb44a18baf3e6202be900f,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 922699220565326943, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
