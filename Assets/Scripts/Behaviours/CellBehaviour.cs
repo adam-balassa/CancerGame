@@ -26,6 +26,8 @@ public class CellBehaviour : MonoBehaviour {
         UpdateComponents();
 
 		cellManager.AddCell(this);
+
+        transform.eulerAngles = new Vector3(0, 0, Random.Range(0f, 360f));
 	}
 
 	void OnDestroy() {
