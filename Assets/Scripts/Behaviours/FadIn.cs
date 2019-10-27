@@ -1,37 +1,31 @@
-﻿
+
  using System.Collections;
  using System.Collections.Generic;
  using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FadeOut : MonoBehaviour
+public class FadIn : MonoBehaviour
 {
     const float fadingFactor = 0.6f;
     float currentFade = 0.0f;
-    bool fadingOut = false;
+    bool fadingOut = true;
     Image image;
     ChooseLevelManager.Level level;
     void Awake() {
-        ChooseLevelManager.Instance.OnChooseLevel.AddListener((ChooseLevelManager.Level l) => {
-            level = l;
-            fadingOut = true;
-        });
         image = GetComponent<Image>();
     }
 
     void Update()
     {
         if (!fadingOut) return;
-        image.color = new Color(image.color.r, image.color.g, image.color.b, currentFade * currentFade * currentFade);
+        image.color = new Color(image.color.r, image.color.g, image.color.b, Mathf.Min(1 - currentFade, 0));
+        if (currentFade >= 1) fadingOut = false;
     }
 
     void FixedUpdate() {
         if (!fadingOut) return;
         currentFade += Time.fixedDeltaTime * fadingFactor;
-        if (currentFade >= 1) {
-            SceneManager.LoadScene(ChooseLevelManager.getLevelScene(level));
-        } 
     }
 }
 

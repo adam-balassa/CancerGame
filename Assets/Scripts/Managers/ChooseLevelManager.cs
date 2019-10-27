@@ -40,7 +40,18 @@ public class ChooseLevelManager : Manager<ChooseLevelManager>
     [Serializable]
     public class OnSelectLevelEvent: UnityEvent<Level> {}
 
+    public static String getLevelScene(Level level) {
+        switch(level) {
+            case Level.BRAIN: return "RectalCancerScene";
+            case Level.BONE: return "RectalCancerScene";
+            case Level.RECTUM: return "RectalCancerScene";
+            case Level.LEUCHEMIA:  return "RectalCancerScene";
+            case Level.LYMPHOMA: return "RectalCancerScene";
+            default: return "";
+        }
+    }
+
     public enum Level {
-        BARIN, LYMPHOMA, LEUCHEMIA, BONE, RECTUM, NONE
+        BRAIN, LYMPHOMA, LEUCHEMIA, BONE, RECTUM, NONE
     }
 }

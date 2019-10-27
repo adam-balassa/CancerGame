@@ -1,22 +1,41 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
+using System;
 
 public class LevelManager : Manager<LevelManager> {
 
+    public short pointsFor5 = 8;
+    public short pointsFor4 = 12;
+    public short pointsFor3 = 20;
+    public short pointsFor2 = 25;
+
     public float width;
     public float height;
-
     public int seed;
     public int maxTries;
 
     public GameObject[] cellPrefabs;
     public Collider2D[] regions;
 
+    public int cancerousCellType = 0;
     int cellMask;
+    int numberOfCancerousCells = 0;
+    short firedRays = 0;
+    public OnGameWon OnGameWonEvent;
 
 	void Awake() {
         cellMask = LayerMask.GetMask("Cell");
-        Random.InitState(seed);
+        UnityEngine.Random.InitState(seed);
+        CellManager manager = CellManager.Instance;
+        manager.OnCellAddedEvent.AddListener((CellBehaviour cell) => {
+            if (cell.type == cancerousCellType) numberOfCancerousCells++;
+        });
+
         
+        manager.OnCellRemovedEvent.AddListener((CellBehaviour cell) => {
+            if (cell.type == cancerousCellType) numberOfCancerousCells--;
+            if (numberOfCancerousCells == 0) OnGameWonEvent.Invoke(firedRays);
+        });
         PopulateLevel();
     }
 
@@ -31,8 +50,8 @@ public class LevelManager : Manager<LevelManager> {
             while (tries < maxTries) {
 
                 Vector2 position = new Vector2(
-                    Random.Range(0, width),
-                    Random.Range(0, height)
+                    UnityEngine.Random.Range(0, width),
+                    UnityEngine.Random.Range(0, height)
                 );
 
                 if (cellRegion == null || cellRegion.OverlapPoint(position)) {
@@ -50,4 +69,12 @@ public class LevelManager : Manager<LevelManager> {
             Debug.Log(cellCount);
         }
     }
+
+    public void RayFired() {
+        firedRays++;
+        Debug.Log("Rays fired");
+    }
+
+    [Serializable]
+    public class OnGameWon : UnityEvent<short> {}
 }

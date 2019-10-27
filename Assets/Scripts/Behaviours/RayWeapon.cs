@@ -9,6 +9,7 @@ public class RayWeapon : MonoBehaviour {
     public GameObject fireAnimation;
 
     CellManager cellManager;
+    LevelManager levelManager;
     new Camera camera;
 
     Vector2 firePosition = new Vector2();
@@ -17,6 +18,7 @@ public class RayWeapon : MonoBehaviour {
 
 	void Awake() {
         cellManager = CellManager.Instance;
+        levelManager = LevelManager.Instance;
         camera = GetComponent<Camera>();
 	}
 
@@ -37,6 +39,7 @@ public class RayWeapon : MonoBehaviour {
                     Vector2 difference = (Vector2) cell.transform.position - firePosition;
                     if ((difference / cell.deathDistance).sqrMagnitude < 1) Destroy(cell.gameObject);
                 }
+                levelManager.RayFired();
             }
         }
     }
