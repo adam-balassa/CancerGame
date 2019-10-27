@@ -22,7 +22,7 @@ public class LevelManager : Manager<LevelManager> {
     int numberOfCancerousCells = 0;
     short firedRays = 0;
     public OnGameWon OnGameWonEvent;
-
+    bool gameWon = false;
 	void Awake() {
         cellMask = LayerMask.GetMask("Cell");
         UnityEngine.Random.InitState(seed);
@@ -34,7 +34,10 @@ public class LevelManager : Manager<LevelManager> {
         
         manager.OnCellRemovedEvent.AddListener((CellBehaviour cell) => {
             if (cell.type == cancerousCellType) numberOfCancerousCells--;
-            if (numberOfCancerousCells == 0) OnGameWonEvent.Invoke(firedRays);
+            if (numberOfCancerousCells == 0 && !gameWon) {
+                gameWon = true;
+                OnGameWonEvent.Invoke(firedRays);
+            }
         });
         PopulateLevel();
     }
