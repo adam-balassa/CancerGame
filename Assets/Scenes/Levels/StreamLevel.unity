@@ -155,11 +155,11 @@ MonoBehaviour:
   seed: 0
   maxTries: 10000
   cellPrefabs:
-  - {fileID: 7463863930392333743, guid: 7ec0703656a9c4940b419f4e5c584c33, type: 3}
-  - {fileID: 1062534445515412770, guid: a5132beacfe8f48bea172d0358b97bce, type: 3}
+  - {fileID: 535514259273569623, guid: d1497b6a5e7a784409cd43419d1d4de5, type: 3}
+  - {fileID: 6405958705476227603, guid: d2e0f74c7c173284289cc70dd403ee74, type: 3}
   regions:
-  - {fileID: 331611531}
   - {fileID: 844983190}
+  - {fileID: 331611531}
 --- !u!114 &10886926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,10 +230,10 @@ PolygonCollider2D:
     m_Paths:
     - - {x: 0, y: 0}
       - {x: 20, y: 0}
-      - {x: 20, y: 12}
-      - {x: 0, y: 12}
-    - - {x: 0, y: 20}
-      - {x: 20, y: 20}
+      - {x: 20, y: 8}
+      - {x: 0, y: 8}
+    - - {x: 0, y: 24}
+      - {x: 20, y: 24}
       - {x: 20, y: 32}
       - {x: 0, y: 32}
 --- !u!4 &331611532
@@ -392,18 +392,18 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 6.021248, y: 14.738159}
-      - {x: 5.121188, y: 17.399311}
-      - {x: 2.1985872, y: 17.375122}
-      - {x: 0.7473824, y: 14.57815}
-      - {x: 2.2342575, y: 11.251303}
-      - {x: 4.681882, y: 11.165682}
-    - - {x: 9.041909, y: 1.5395446}
-      - {x: 12.97083, y: 1.4965215}
-      - {x: 14.854862, y: 3.8853002}
-      - {x: 12.980358, y: 7.0948777}
-      - {x: 7.4910316, y: 6.855757}
-      - {x: 6.123686, y: 3.1363893}
+    - - {x: 8.6865425, y: 17.193035}
+      - {x: 6.874668, y: 20.976416}
+      - {x: 2.6895635, y: 21.162642}
+      - {x: 0.5369637, y: 17.45386}
+      - {x: 2.584952, y: 15.319384}
+      - {x: 6.7860594, y: 15.163624}
+    - - {x: 11.005809, y: -2.0375571}
+      - {x: 14.654171, y: -1.6597466}
+      - {x: 15.766672, y: 1.3602881}
+      - {x: 14.383144, y: 4.1490254}
+      - {x: 10.016049, y: 4.0501876}
+      - {x: 8.438283, y: 0.9620719}
 --- !u!4 &844983191
 Transform:
   m_ObjectHideFlags: 0
@@ -461,10 +461,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 14}
-      - {x: 20, y: 14}
-      - {x: 20, y: 18}
-      - {x: 0, y: 18}
+    - - {x: 0, y: 10}
+      - {x: 20, y: 10}
+      - {x: 20, y: 22}
+      - {x: 0, y: 22}
 --- !u!4 &1085144435
 Transform:
   m_ObjectHideFlags: 0
@@ -493,7 +493,7 @@ AreaEffector2D:
     serializedVersion: 2
     m_Bits: 257
   m_UseGlobalAngle: 0
-  m_ForceAngle: -45
+  m_ForceAngle: -75
   m_ForceMagnitude: 8
   m_ForceVariation: 0
   m_ForceTarget: 0

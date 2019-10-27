@@ -1,4 +1,4 @@
-﻿Shader "Sprites/Additive"
+﻿Shader "Sprites/Subtractive"
 {
     Properties
     {
@@ -23,6 +23,7 @@
         ZWrite Off
         Fog { Mode Off }
         Blend SrcAlpha One
+        BlendOp RevSub
  
         Pass
         {
