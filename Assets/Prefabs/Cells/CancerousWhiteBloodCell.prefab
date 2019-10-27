@@ -72,15 +72,40 @@ PrefabInstance:
       propertyPath: type
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6541912579654641094, guid: 602dc446238bbf84f8cc4a9a08245755,
+        type: 3}
+      propertyPath: deathDistance
+      value: 2.8
+      objectReference: {fileID: 0}
     - target: {fileID: 1125937010808848163, guid: 602dc446238bbf84f8cc4a9a08245755,
         type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2889010168740242262, guid: 602dc446238bbf84f8cc4a9a08245755,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.09433961
+      objectReference: {fileID: 0}
+    - target: {fileID: 2889010168740242262, guid: 602dc446238bbf84f8cc4a9a08245755,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.09433961
+      objectReference: {fileID: 0}
+    - target: {fileID: 2889010168740242262, guid: 602dc446238bbf84f8cc4a9a08245755,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.09433961
+      objectReference: {fileID: 0}
     - target: {fileID: 2060635996977617919, guid: 602dc446238bbf84f8cc4a9a08245755,
         type: 3}
       propertyPath: maxValue
-      value: 0.1
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2060635996977617919, guid: 602dc446238bbf84f8cc4a9a08245755,
+        type: 3}
+      propertyPath: minValue
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 405019650294006271, guid: 602dc446238bbf84f8cc4a9a08245755,
         type: 3}
