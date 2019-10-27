@@ -75,7 +75,6 @@ public class LevelManager : Manager<LevelManager> {
 
     public void RayFired() {
         firedRays++;
-        Debug.Log("Rays fired");
     }
 
     [Serializable]

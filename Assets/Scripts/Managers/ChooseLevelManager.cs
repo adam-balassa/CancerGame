@@ -42,11 +42,11 @@ public class ChooseLevelManager : Manager<ChooseLevelManager>
 
     public static String getLevelScene(Level level) {
         switch(level) {
-            case Level.BRAIN: return "RectalCancerScene";
-            case Level.BONE: return "RectalCancerScene";
-            case Level.RECTUM: return "RectalCancerScene";
-            case Level.LEUCHEMIA:  return "RectalCancerScene";
-            case Level.LYMPHOMA: return "RectalCancerScene";
+            case Level.BRAIN: return "SampleLevel";
+            case Level.BONE: return "SampleLevel";
+            case Level.RECTUM: return "SampleLevel";
+            case Level.LEUCHEMIA:  return "SampleLevel";
+            case Level.LYMPHOMA: return "SampleLevel";
             default: return "";
         }
     }
