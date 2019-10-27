@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 3549790658111145002, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
       propertyPath: m_Name
-      value: WhiteBloodCell
+      value: Neuron
       objectReference: {fileID: 0}
     - target: {fileID: 3705442833662292991, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
@@ -131,7 +131,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4eb8e761749dc4c25b263d0bf52d5797,
+      objectReference: {fileID: 21300000, guid: 8161544e4625d49e2986bdb469731bd6,
         type: 3}
     - target: {fileID: 3549790658111145004, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
@@ -207,17 +207,17 @@ PrefabInstance:
     - target: {fileID: 922699220565326943, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.4012104
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 922699220565326943, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.5283019
+      value: 0.49056602
       objectReference: {fileID: 0}
     - target: {fileID: 922699220565326943, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.5065816
+      value: 0.45100263
       objectReference: {fileID: 0}
     - target: {fileID: 3260253562848400444, guid: b19796e20fbb44a18baf3e6202be900f,
         type: 3}

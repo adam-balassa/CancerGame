@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 10886927}
   - component: {fileID: 10886926}
   - component: {fileID: 10886925}
+  - component: {fileID: 10886928}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -156,7 +157,7 @@ MonoBehaviour:
   maxTries: 10000
   cellPrefabs:
   - {fileID: 535514259273569623, guid: d1497b6a5e7a784409cd43419d1d4de5, type: 3}
-  - {fileID: 6405958705476227603, guid: d2e0f74c7c173284289cc70dd403ee74, type: 3}
+  - {fileID: 6405958705476227603, guid: 49a0fa3896c704e239c687f11c037cab, type: 3}
   regions:
   - {fileID: 844983190}
   - {fileID: 331611531}
@@ -165,7 +166,8 @@ MonoBehaviour:
   pointsFor4: 12
   pointsFor3: 20
   pointsFor2: 25
-  starsPrefab: {fileID: 0}
+  starsPrefab: {fileID: 3514621395664033784, guid: 23e24a7d094748344af4004dd07f24da,
+    type: 3}
 --- !u!114 &10886926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,6 +200,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &10886928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10886924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aabf7ebf20570e241a513cfe3db1bb08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &331611530
 GameObject:
   m_ObjectHideFlags: 0
